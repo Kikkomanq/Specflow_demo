@@ -37,8 +37,15 @@ namespace CCloud_1.Pages
         {
             int driverTimeout = Convert.ToInt32(timeout);
 
+            //Asserting if the conditions is true, and Error message for false condiotion of method
             Assert.True(GetText(text, driverTimeout), "Expected text is missing from page for expected load time");
         }
+
+
+        /*Method GetText() will first wait for specified number of seconds to find element.
+        If element is found (ElementIsVisible), then it will check if textAttribute is as expected
+        At the end, it will handle exception in negative case (test with google), so that message from Assert method will be displayed,
+        reather than default TimeoutException*/ 
 
         public bool GetText(string text, int timeout)
         {

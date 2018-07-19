@@ -69,11 +69,11 @@ namespace CCloud_1.Features
         public virtual void PageCheck()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Page check", ((string[])(null)));
-#line 6
+#line 9
 this.ScenarioSetup(scenarioInfo);
-#line 7
+#line 10
  testRunner.Given("I navigato to website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 8
+#line 11
  testRunner.Then("Expected text \'Sign in\' will appear on page for less than \'10\' seconds", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
